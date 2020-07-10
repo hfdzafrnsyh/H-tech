@@ -1,38 +1,559 @@
 .App {
+  margin: 0;
+  padding: 0;
+}
+
+/* nav */
+/* font-family: 'Modak', cursive; */
+
+nav .nav-logo {
+  font-family: "Modak", cursive;
+  letter-spacing: 3px;
+}
+
+nav {
+
+  background-color: #142a5a;
+
+  height: 80px;
+  color: floralwhite;
+
+
+}
+
+.nav-logo {
+  float: left;
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 70px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 10px 10px;
+}
+
+nav ul li a {
+  color: lightgray;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 5px;
+  font-size: 0.8em;
+}
+
+
+nav ul li a:hover {
+  color: #fff;
+  background-color: #eb4848;
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  text-decoration: none;
+}
+
+
+
+/* akhir nav */
+
+
+/* header */
+
+.header {
+  background-image: url("./components/header/image/background-other2.jpg");
+  background-size: cover;
+  background-position: 0 -230px;
+  width: 100%;
+  height: 600px;
+  color: #536DFE;
+  text-align: center;
+
+}
+
+
+.image-header img {
+  width: 500px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.header h4 {
+  font-size: 25px;
+  padding-top: 25px;
+  color: #ffffff;
+}
+
+.header p {
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+
+  color: #ffffff;
+  font-size: 22px;
+}
+
+
+
+/* akhir header */
+
+
+/* home lessons */
+
+.home-lesson {
+  display: flex;
+  margin-top: 20px;
+
+}
+
+.lessons {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.language {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  padding: 20px 20px;
+  margin: 10px 10px;
+  flex: auto;
+  display: inline-block;
+  width: 25%;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px 5px #808080;
+  border-radius: 0.5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.home-lesson p {
+  color: black;
+  opacity: 0.7;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.lessons p {
+  color: black;
+  opacity: 0.7;
+}
+
+.button-all-lesson {
+  margin: 25px 25px;
+  text-align: center;
+}
+
+.button-all-lesson a {
+  background-color: #536DFE;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  padding: 15px 20px;
+  color: #fff;
+}
+
+.button-all-lesson a:hover {
+  background-color: rgb(236, 22, 58);
+  border: 3px solid #536DFE;
+
+  color: #fff;
+}
+
+
+.language-image img {
+  width: 100px;
+  border: 4px solid #2a363b;
+  border-radius: 5rem;
+}
+
+.home-client {
+  text-align: center;
+  border-top: 2px solid #2a363b;
+}
+
+.home-client h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #2a363b;
+}
+
+.home-clients {
+  margin-top: 50px;
+  display: flex;
+
+}
+
+
+
+.client {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+  flex: auto;
+  padding: 20px 20px;
+  width: 50%;
+  background-color: rgb(65, 61, 61);
+  border-radius: 0.8rem;
+  text-align: center;
+}
+
+.client h5 {
+  color: #dc143c;
+  font-size: 20px;
+}
+
+.client span {
+  color: #1471dc;
+}
+
+.client h3,
+p {
+  color: #efeeee;
+}
+
+
+/*  akhir home lessons */
+
+
+/* client */
+
+.client-image img {
+  padding-top: 20px;
+  width: 200px;
+
+}
+
+/* akhir client */
+
+/* portfolio */
+
+.portfolio {
+
+  text-align: center;
+}
+
+.portfolio h3 {
+  font-size: 25px;
+  color: #2a363b;
+}
+
+.portfolios {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.portfolios img {
+  filter: grayscale(30%);
+  text-align: center;
+  padding: 10px 10px;
+  flex: auto;
+  width: 30%;
+}
+
+
+
+/* akhir portfolio */
+
+
+/* contact */
+
+.contact {
+  text-align: center;
+  background-color: rgb(65, 61, 61);
+  margin: 20px 20px;
+  padding: 15px 15px;
+  border-radius: 1rem;
+}
+
+.contact p {
+  font-size: 25px;
+}
+
+.contact h3 {
+  color: #fff;
+  font-size: 15px;
+}
+
+.contact button {
+  background-color: #00cf56;
+  border-radius: 0.5rem;
+  margin: 10px 10px;
+  border: 2px solid #1471dc;
+  cursor: pointer;
+  padding: 15px 20px;
+  color: white;
+}
+
+.contact-link {
+  text-align: center;
+}
+
+/* akhit contact */
+
+
+/* formdaftar */
+
+.formDaftar {
+  text-align: center;
+  margin: 50px 50px;
+  color: #dc143c;
+  display: flex;
+}
+
+
+.pageForm {
+  flex: auto;
+  width: 50%;
+  padding: 30px 30px;
+}
+
+.formDaftar p {
+  color: #2a363b;
+}
+
+.pageForm h5 {
+  color: #1471dc;
+  padding: 20px 20px;
+}
+
+.form h2 {
+  color: #1471dc;
+}
+
+.form {
+  /* margin-left: 400px; */
+  background-color: #e2dedf;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 20px 20px;
+  border: 2px solid #2a363b;
+  background-color: #fff;
+  box-shadow: 3px 3px 3px 5px #808080;
+  color: #2a363b;
+}
+
+.form p {
+  color: #2a363b;
+}
+
+.form-group label {
+  padding: 15px 15px;
+  border-radius: 0.5rem;
+  border: 1px solid #2a363b;
+  font-size: 20px;
+}
+
+.form-group input {
+  padding: 5px 5px;
+  border-radius: 0.3rem;
+}
+
+.form button {
+  background-color: #dc143c;
+  border: 2px solid #2a363b;
+  color: #e2dedf;
+  padding: 10px 25px;
+  border-radius: 0.8rem;
+}
+
+/* akhirFormDaftar */
+
+
+
+/* footer */
+.footer {
+  background-color: #142a5a;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer p {
+  color: #1471dc;
+  text-align: center;
+  padding: 25px 25px;
+}
+
+/* akhir footer */
+
+
+
+
+/* modal */
+.modal {
+  font-size: 25px;
+
+}
+
+.modal-close button {
+  background-color: #fff;
+  width: 50px;
+}
+
+.modal-header {
+  color: #1471dc;
+}
+
+
+
+.modal-body {
+  font-size: 20px;
+  text-align: center;
+}
+
+.modal-body p {
+  color: #dc143c;
+}
+
+.modal-body span {
+  color: #1471dc;
+}
+
+.modal-close {
+  float: right;
+}
+
+/* akhir modal */
+
+
+@media screen and (max-width:768px) {
+
+  .nav-logo {
+    float: left;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+
+  nav ul {
+    list-style: none;
+    font-size: 18px;
   }
+
+  nav ul li {
+    margin-top: 10px;
+    padding: 10px 10px;
+  }
+
+
+
+  .home-lesson {
+    flex-wrap: wrap;
+  }
+
+  .language {
+    margin: 0;
+    width: 50%;
+  }
+
+
+  .home-clients {
+    flex-wrap: wrap;
+  }
+
+  .client {
+    width: 50%;
+    margin: 0;
+
+  }
+
+  .formDaftar {
+    flex-wrap: wrap;
+  }
+
+  .pageForm {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-group label {
+    padding: 5px;
+
+  }
+
+  .form-group input {
+    padding: 0;
+  }
+
+}
+
+@media screen and (max-width:678px) {
+
+  .nav-logo {
+    float: left;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+
+
+  nav ul {
+    list-style: none;
+    font-size: 11px;
+  }
+
+  nav ul li {
+    margin-top: 15px;
+    padding: 10px 10px;
+  }
+
+
+
+  .home-lesson {
+    flex-wrap: wrap;
+  }
+
+  .language {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+
+  .home-clients {
+    flex-wrap: wrap;
+  }
+
+  .client {
+
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+
+  }
+
+  .formDaftar {
+    flex-wrap: wrap;
+  }
+
+  .pageForm {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .form-group label {
+    padding: 5px;
+
+  }
+
+  .form-group input {
+    padding: 0;
+  }
+
 }
